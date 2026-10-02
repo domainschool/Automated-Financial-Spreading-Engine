@@ -5,7 +5,8 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Automated-Financial-Spreading-Engine/',
+  // Universal relative base path ensures assets load properly on GitHub Pages and other hosts
+  base: './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
